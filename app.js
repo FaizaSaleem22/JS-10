@@ -1,0 +1,110 @@
+// q1
+// function today(){
+//     var now = new Date
+//     document.write(now, "<br>");
+// }
+// today()
+
+// q2
+// function greet(userFirst, userLast){
+//     document.write("Welcome", " ", userFirst, " ", userLast,  "<br>")
+// }
+// var firstName = prompt("Enter your first name")
+// var lastName = prompt("Enter your last name")
+// greet(firstName,lastName)
+
+// q3
+// function sum(a,b){
+//     document.write(a,"+",b,"=",a+b,"<br>")
+// }
+// var num1 = +prompt("Enter your 1st number")
+// var num2 = +prompt("Enter your 2nd number")
+// sum(num1,num2)
+
+// // q4
+// function operation(a,b,c){
+//     var result = ""
+//     if(b === "+"){
+//         result= a+c
+//     }
+//     else if(b === "-"){
+//         result= a-c
+//     }
+//     else if(b === "*"){
+//         result= a*c
+//     }
+//     else if(b === "/"){
+//         result= a/c
+//     }else{
+//         result = "invalid operator"
+//     }
+//     document.write(a,b,c,"=" , result, "<br>")
+// }
+// var num1 = +prompt("Enter your 1st number")
+// var operator = prompt("Enter any operator")
+// var num2 = +prompt("Enter your 2nd number")
+// operation(num1,operator,num2)
+
+// q5
+// function square(a){
+//     document.write(`Square of ${a} is: ${a*a} <br>`)
+// }
+// var user = +prompt("Enter a number")
+// square(user)
+
+// q6
+// function factorial(a) {
+//     var calculation = 1
+//     for (let i = 1; i <= a; i++){
+//         calculation = calculation * i
+//     }
+//     document.write(a , "! = " , calculation);
+// }
+// var user = +prompt("Enter a number");
+// factorial(user)
+
+// q7
+// function counting(a,b){
+//     for(i=a; i<=b; i++){
+//         document.write(i, "<br>")
+//     }
+// }
+// var num1 = +prompt("Enter start number")
+// var num2 = +prompt("Enter end number")
+// counting(num1,num2)
+
+// q8
+// function hypotenuse(base, perpendicular){
+//     function square(a){
+//         return a*a
+//     }
+//     var hyp = square(base)+square(perpendicular)
+//     return Math.sqrt(hyp).toFixed(2)
+// }
+// var num1 = +prompt("enter base")
+// var num2 = +prompt("enter perpendicular")
+// document.write(hypotenuse(num1,num2))
+
+// q9
+// function area(a,b){
+//     return a*b
+// }
+// document.write(area(3,4) , "<br>");
+// var width = +prompt("Enter width")
+// var height = +prompt("Enter height")
+// document.write(area(width,height))
+
+// q10
+// function palindrome(word){
+//     var reverse = ""
+//     for(var i=word.length-1; i>=0; i--){
+//         reverse = reverse+word[i]
+//     }
+//     if( word === reverse){
+//         document.write(word ," ", "is a palindrome word")
+//     }else{
+//         document.write(word ," ", "is not a palindrome word")
+//     }
+// }
+// var user = prompt("Enter a palindrome word")
+// palindrome(user)

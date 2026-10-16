@@ -108,3 +108,62 @@
 // }
 // var user = prompt("Enter a palindrome word")
 // palindrome(user)
+
+// q11
+// function str(sentence){
+//     var arr = sentence.split(" ")
+//     for(var i=0; i<arr.length; i++){
+//         arr[i] = arr[i].charAt(0).toUpperCase()+arr[i].slice(1)
+//     }
+    
+//     return arr.join(" ")
+// }
+
+// var capital = "the quick brown fox"
+// console.log(str(capital))
+
+// q12
+function str(sentence){
+    var arr = sentence.split(" ")
+    var longestWord= ""
+    for(var i=0; i<arr.length; i++){
+        if(arr[i].length>longestWord.length){
+            longestWord = arr[i]
+        }
+    }
+    return longestWord
+}
+var longest = "web development tutorial"
+console.log(str(longest));
+
+// q13
+function calculateLetter(str, letter){
+    var count = 0
+    for(var i=0; i<str.length; i++){
+        if(str[i] === letter){
+            count++
+        }
+    }
+    return count;
+}
+var string = "jsresources.com"
+var findLetter = "o"
+console.log(calculateLetter(string, findLetter))
+
+// q14
+function calcCircumference(radius){
+    var pi = 3.14159
+    return 2*pi*radius
+}
+var r = 9
+console.log(("The circumference is" , calcCircumference(r).toFixed(2)));
+
+function calcArea(radius){
+    function square(a){
+        return a*a
+    }
+    var pi = 3.14159
+    return pi*square(radius)
+}
+var r = 11
+document.write("The area is" ," ", calcArea(r).toFixed(2),"cm <sup>2</sup>");
